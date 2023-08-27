@@ -1,10 +1,13 @@
+@php
+    $custom_pages = App\Models\Page::all();
+@endphp
 <header class="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true"
     data-sticky-options='{ "stickyTrigger": "first-section" }'>
     <div class="mainbar-wrap">
         <div class="megamenu-hover-bg"></div>
         <div class="container-fluid mainbar-container">
             <div class="mainbar">
-                <div class="row mainbar-row align-items-lg-stretch px-4">
+                <div class="px-4 row mainbar-row align-items-lg-stretch">
                     <div class="col">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#home" rel="home">
@@ -60,28 +63,12 @@
                                         <li><a href="#">Data Penduduk Terbaru</a></li>
                                     </ul>
                                 </li>
-                                <li class="has-submenu">
-                                    <a href="">
+                                <li>
+                                    <a href="/lembaga">
                                         <span class="link-txt">
                                             <span class="txt"> Lembaga Desa </span>
                                         </span>
                                     </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="#">Badan Permusyawaratan Desa (BPD)</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Lembaga Pemberdayaan Masyarakat Desa (LPM)</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Pemberdayaan Kesejahteraan Keluarga (PKK)</a>
-                                        </li>
-                                        <li><a href="#">Karang Taruna</a></li>
-                                        <li><a href="#">Linmas</a></li>
-                                        <li><a href="#">LPD Desa Adat Seraya</a></li>
-                                        <li><a href="#">Koperas</a></li>
-                                        <li><a href="#">BUMDES</a></li>
-                                    </ul>
                                 </li>
                                 <li class="has-submenu">
                                     <a href="">
@@ -90,13 +77,14 @@
                                         </span>
                                     </a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Potensi Desa</a></li>
                                         <li><a href="#">Artikel Berita</a></li>
-                                        <li><a href="#">Produk Hukum</a></li>
+                                        @foreach ($custom_pages as $page)
+                                            <li><a href="{{ $page->slug }}">{{ $page->judul }}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#kontak">
+                                    <a href="/#kontak">
                                         <span class="link-txt">
                                             <span class="txt"> Kontak </span>
                                         </span>
@@ -105,7 +93,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col text-right">
+                    <div class="mt-5 text-right col">
                         <div class="header-module">
                             <ul class="social-icon social-icon-sm">
                                 <li>

@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ProfilDesaResource\Pages;
-use App\Filament\Resources\ProfilDesaResource\RelationManagers;
-use App\Models\ProfilDesa;
+use App\Filament\Resources\PemerintahanResource\Pages;
+use App\Filament\Resources\PemerintahanResource\RelationManagers;
+use App\Models\Pemerintahan;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
@@ -14,13 +14,13 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ProfilDesaResource extends Resource
+class PemerintahanResource extends Resource
 {
-    protected static ?string $model = ProfilDesa::class;
+    protected static ?string $model = Pemerintahan::class;
 
-    protected static string $title = 'Profil Desa';
+    protected static string $title = 'Struktur Pemerintahan';
 
-    protected static ?string $navigationLabel = 'Profil Desa';
+    protected static ?string $navigationLabel = 'Struktur Pemerintahan';
 
     protected static ?string $navigationGroup = 'Pengaturan';
 
@@ -31,23 +31,18 @@ class ProfilDesaResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    Forms\Components\TextInput::make('visi')
+                    Forms\Components\TextInput::make('nama')
                         ->autofocus()
                         ->required()
-                        ->placeholder('Visi'),
-                    Forms\Components\RichEditor::make('misi')
+                        ->placeholder('Nama'),
+                    Forms\Components\TextInput::make('jabatan')
                         ->autofocus()
                         ->required()
-                        ->placeholder('Misi'),
-                    Forms\Components\RichEditor::make('sejarah')
+                        ->placeholder('Jabatan'),
+                    Forms\Components\FileUpload::make('foto')
                         ->autofocus()
-                        ->required()
-                        ->placeholder('Sejarah'),
-                    Forms\Components\RichEditor::make('wilayah')
-                        ->autofocus()
-                        ->required()
-                        ->placeholder('Wilayah'),
-                ], 'Profil Desa'),
+                        ->placeholder('Foto'),
+                ], 'Struktur Pemerintahan'),
             ]);
     }
 
@@ -55,19 +50,14 @@ class ProfilDesaResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('visi')
+                Tables\Columns\TextColumn::make('nama')
                     ->searchable()
-                    ->limit(50)
                     ->sortable(),
-                Tables\Columns\TextColumn::make('misi')
+                Tables\Columns\TextColumn::make('jabatan')
                     ->searchable()
-                    ->markdown()
-                    ->limit(10)
                     ->sortable(),
-                Tables\Columns\TextColumn::make('sejarah')
+                Tables\Columns\ImageColumn::make('foto')
                     ->searchable()
-                    ->markdown()
-                    ->limit(10)
                     ->sortable(),
             ])
             ->filters([
@@ -85,20 +75,20 @@ class ProfilDesaResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-
+    
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-
+    
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListProfilDesas::route('/'),
-            'create' => Pages\CreateProfilDesa::route('/create'),
-            'edit' => Pages\EditProfilDesa::route('/{record}/edit'),
+            'index' => Pages\ListPemerintahans::route('/'),
+            'create' => Pages\CreatePemerintahan::route('/create'),
+            'edit' => Pages\EditPemerintahan::route('/{record}/edit'),
         ];
-    }
+    }    
 }

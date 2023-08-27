@@ -2,27 +2,28 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ProfilDesaResource\Pages;
-use App\Filament\Resources\ProfilDesaResource\RelationManagers;
-use App\Models\ProfilDesa;
+use App\Filament\Resources\BeritaResource\Pages;
+use App\Filament\Resources\BeritaResource\RelationManagers;
+use App\Models\Berita;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Forms\Set;
+use Filament\Forms\Get;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ProfilDesaResource extends Resource
+class BeritaResource extends Resource
 {
-    protected static ?string $model = ProfilDesa::class;
+    protected static ?string $model = Berita::class;
 
-    protected static string $title = 'Profil Desa';
+    protected static string $title = 'Berita';
 
-    protected static ?string $navigationLabel = 'Profil Desa';
-
-    protected static ?string $navigationGroup = 'Pengaturan';
+    protected static ?string $navigationLabel = 'Berita';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -31,23 +32,18 @@ class ProfilDesaResource extends Resource
         return $form
             ->schema([
                 Section::make([
-                    Forms\Components\TextInput::make('visi')
+                    Forms\Components\TextInput::make('judul')
                         ->autofocus()
                         ->required()
-                        ->placeholder('Visi'),
-                    Forms\Components\RichEditor::make('misi')
+                        ->placeholder('Judul'),
+                    Forms\Components\RichEditor::make('isi')
                         ->autofocus()
                         ->required()
-                        ->placeholder('Misi'),
-                    Forms\Components\RichEditor::make('sejarah')
+                        ->placeholder('Isi'),
+                    Forms\Components\FileUpload::make('foto')
                         ->autofocus()
-                        ->required()
-                        ->placeholder('Sejarah'),
-                    Forms\Components\RichEditor::make('wilayah')
-                        ->autofocus()
-                        ->required()
-                        ->placeholder('Wilayah'),
-                ], 'Profil Desa'),
+                        ->placeholder('Foto'),
+                ], 'Berita'),
             ]);
     }
 
@@ -55,19 +51,11 @@ class ProfilDesaResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('visi')
+                Tables\Columns\TextColumn::make('judul')
                     ->searchable()
-                    ->limit(50)
                     ->sortable(),
-                Tables\Columns\TextColumn::make('misi')
+                Tables\Columns\TextColumn::make('slug')
                     ->searchable()
-                    ->markdown()
-                    ->limit(10)
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('sejarah')
-                    ->searchable()
-                    ->markdown()
-                    ->limit(10)
                     ->sortable(),
             ])
             ->filters([
@@ -96,9 +84,9 @@ class ProfilDesaResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListProfilDesas::route('/'),
-            'create' => Pages\CreateProfilDesa::route('/create'),
-            'edit' => Pages\EditProfilDesa::route('/{record}/edit'),
+            'index' => Pages\ListBeritas::route('/'),
+            'create' => Pages\CreateBerita::route('/create'),
+            'edit' => Pages\EditBerita::route('/{record}/edit'),
         ];
     }
 }

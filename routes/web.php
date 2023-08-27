@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,26 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [LandingController::class, 'index']);
+Route::get('/berita', [LandingController::class, 'berita']);
+Route::get('/visi-misi', [LandingController::class, 'visi_misi']);
+Route::get('/pemerintahan', [LandingController::class, 'pemerintahan']);
+Route::get('/sejarah', [LandingController::class, 'sejarah']);
+Route::get('/wilayah', [LandingController::class, 'wilayah']);
+Route::get('/lembaga', [LandingController::class, 'lembaga']);
 
-Route::get('/berita', function () {
-    return view('berita.index');
-});
-
-Route::get('/visi-misi', function () {
-    return view('visi-misi');
-});
-
-Route::get('/pemerintahan', function () {
-    return view('pemerintahan');
-});
-
-Route::get('/sejarah', function () {
-    return view('sejarah');
-});
-
-Route::get('/wilayah', function () {
-    return view('wilayah');
-});
+// custom page based on slug from database
+Route::get('/{slug}', [LandingController::class, 'page']);
