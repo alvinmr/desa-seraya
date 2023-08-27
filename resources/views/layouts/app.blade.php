@@ -18,14 +18,13 @@
                                 <img width="64" src="assets/img/logo/logo-seraya.png" alt="Logo" />
                             </figure>
                             <p>
-                                Desa Seraya adalah sebuah desa yang dapat memanjakan mata para
-                                pengunjungnya karena memiliki pemandangan indah serta kaya
-                                akan sumber daya alam.
+                                Desa Seraya adalah salah satu desa tua di Bali yang memiliki jagung khas dan kearifan
+                                lokal yang dikenal dengan nama Gebug Ende.
                             </p>
                         </div>
                         <div class="lqd-column col-md-3 col-sm-6 col-md-offset-2">
-                            <h3 class="widget-title text-white">Navigasi</h3>
-                            <ul class="lqd-custom-menu reset-ul text-white">
+                            <h3 class="text-white widget-title">Navigasi</h3>
+                            <ul class="text-white lqd-custom-menu reset-ul">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#hasil-desa">Profil Desa</a></li>
                                 <li><a href="#lokasi">Lembaga Desa</a></li>
@@ -34,7 +33,7 @@
                             </ul>
                         </div>
                         <div class="lqd-column col-md-3 col-sm-6">
-                            <h3 class="widget-title text-white">Kontak</h3>
+                            <h3 class="text-white widget-title">Kontak</h3>
                             <p>
                                 <!-- <a href="cdn-cgi/l/email-protection.html" class="__cf_email__"
                            data-cfemail="e28a878e8e8da2839487cc818d8f">[email&#160;protected]</a>

@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <section id="home" class="vc_row bg-cover bg-center fullheight d-flex align-items-center py-5 mb-60"
+    <section id="home" class="py-5 bg-center bg-cover vc_row fullheight d-flex align-items-center mb-60"
         data-row-bg="./assets/img/background/banner.jpg">
         <span class="row-bg-loader"></span>
         <div class="container">
-            <div class="row d-flex flex-wrap align-items-center">
+            <div class="flex-wrap row d-flex align-items-center">
                 <div class="lqd-column col-md-6" data-custom-animations="true"
                     data-ca-options='{ "triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1200", "delay":"150", "easing":"easeOutQuint", "direction":"forward", "initValues":{"translateY":60, "translateZ":-160, "rotateX":-84, "opacity":0}, "animations":{"translateY":0, "translateZ":0, "rotateX":0, "opacity":1} }'>
                     <div class="ld-fancy-heading mask-text">
                         <p class="text-white font-size-18" data-split-text="true" data-split-options='{ "type": "words" }'>
                             <span class="ld-fh-txt">
-                                <!-- <i class="fa fa-youtube-play fa-2x mr-3 mb-4"></i> -->
+                                <!-- <i class="mb-4 mr-3 fa fa-youtube-play fa-2x"></i> -->
                                 <span class="opacity-06">Website Resmi dari</span>
                             </span>
                         </p>
@@ -41,6 +41,28 @@
         </div>
     </section>
 
+    {{-- section video profile --}}
+    <section id="hasil-desa" class="vc_row pt-80 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="lqd-column col-md-12">
+                    <header class="fancy-title" data-custom-animations="true"
+                        data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"translateX":-32,"opacity":0},"animations":{"translateX":0,"opacity":1}}'>
+                        <h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">
+                            Profil Desa
+                        </h6>
+                        <h2 class="mb-4 mt-md-4 pr-md-7">
+                            Selamat Datang di Desa Seraya
+                        </h2>
+                    </header>
+                </div>
+                {{-- video --}}
+                <iframe data-custom-animations="true" style="width: 100%;" height="515" src="https://www.youtube.com/embed/7yNC8MFsPV0">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <section id="hasil-desa" class="vc_row pt-80 pb-120">
         <div class="container">
             <div class="row">
@@ -50,11 +72,11 @@
                         <h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">
                             Sumber Daya Alam
                         </h6>
-                        <h2 class="mt-md-4 pr-md-7 mb-4">
+                        <h2 class="mb-4 mt-md-4 pr-md-7">
                             Pertanian, Perikanan, dan Wisata Alam.
                         </h2>
                         <div class="row">
-                            <div class="lqd-column col-xs-4 col-sm-2 pt-3 mb-4">
+                            <div class="pt-3 mb-4 lqd-column col-xs-4 col-sm-2">
                                 <div class="lqd-h-sep">
                                     <span class="lqd-h-sep-inner"></span>
                                 </div>
@@ -73,7 +95,7 @@
                 <div class="lqd-column col-lg-5 col-md-6 col-lg-offset-1">
                     <div class="lqd-iconbox-stack" data-custom-animations="true"
                         data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"400","delay":"100","easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>
-                        <div class="iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-first bg-cover bg-center"
+                        <div class="bg-center bg-cover iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-first"
                             style="
       background-image: url(assets/img/background/sda-sayur.jpg);
     ">
@@ -84,7 +106,7 @@
                             </div>
                         </div>
 
-                        <div class="iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-second bg-cover bg-center"
+                        <div class="bg-center bg-cover iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-second"
                             style="
       background-image: url(assets/img/background/sda-bunga.jpg);
     ">
@@ -95,7 +117,7 @@
                             </div>
                         </div>
 
-                        <div class="iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-third bg-cover bg-center"
+                        <div class="bg-center bg-cover iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-third"
                             style="
       background-image: url(assets/img/background/sda-buah.jpg);
     ">
@@ -113,8 +135,8 @@
 
     <section id="lokasi" class="vc_row pt-60 pb-90">
         <div class="container">
-            <div class="row d-flex flex-wrap align-items-center">
-                <div class="lqd-column col-lg-7 col-md-6 mb-5">
+            <div class="flex-wrap row d-flex align-items-center">
+                <div class="mb-5 lqd-column col-lg-7 col-md-6">
                     <div class="liquid-img-group-single stretch-to-left" data-shadow-style="4" data-roundness="4"
                         data-inview="true" data-animate-shadow="true" data-reveal="true"
                         data-reveal-options='{"direction":"rl","bgcolor":"rgb(25, 38, 47)"}'>
@@ -127,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="lqd-column col-lg-5 col-md-5 mb-md-0 pl-5" data-custom-animations="true"
+                <div class="pl-5 lqd-column col-lg-5 col-md-5 mb-md-0" data-custom-animations="true"
                     data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
                     <header class="fancy-title mb-60">
                         <h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">
@@ -156,7 +178,7 @@
         <div class="container">
             <div class="row">
                 <div class="lqd-column col-md-8 col-md-offset-2">
-                    <header class="fancy-title text-center mb-75" data-custom-animations="true"
+                    <header class="text-center fancy-title mb-75" data-custom-animations="true"
                         data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
                         <h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">
                             Kumpulan berita
@@ -170,131 +192,131 @@
                 <div class="lqd-column col-md-12">
                     <div id="list-post" class="row">
                         <!-- <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-               <article class="liquid-lp mb-60">
-                  <figure class="liquid-lp-media">
-                     <a href="berita.html">
-                        <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                     </a>
-                  </figure>
-                  <header class="liquid-lp-header">
-                     <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
-                           putting
-                           timeshares to shame</a></h2>
-                     <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                        2017</time>
-                  </header>
-                  <div class="liquid-lp-excerpt">
-                     <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                        their Global Housing Crisis competition series.</p>
-                  </div>
-               </article>
-            </div>
+                   <article class="liquid-lp mb-60">
+                      <figure class="liquid-lp-media">
+                         <a href="berita.html">
+                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                         </a>
+                      </figure>
+                      <header class="liquid-lp-header">
+                         <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
+                               putting
+                               timeshares to shame</a></h2>
+                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                            2017</time>
+                      </header>
+                      <div class="liquid-lp-excerpt">
+                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                            their Global Housing Crisis competition series.</p>
+                      </div>
+                   </article>
+                </div>
 
-            <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-               <article class="liquid-lp mb-60">
-                  <figure class="liquid-lp-media">
-                     <a href="berita.html">
-                        <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                     </a>
-                  </figure>
-                  <header class="liquid-lp-header">
-                     <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
-                           London</a></h2>
-                     <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                        2017</time>
-                  </header>
-                  <div class="liquid-lp-excerpt">
-                     <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                        their Global Housing Crisis competition series.</p>
-                  </div>
-               </article>
-            </div>
+                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                   <article class="liquid-lp mb-60">
+                      <figure class="liquid-lp-media">
+                         <a href="berita.html">
+                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                         </a>
+                      </figure>
+                      <header class="liquid-lp-header">
+                         <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
+                               London</a></h2>
+                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                            2017</time>
+                      </header>
+                      <div class="liquid-lp-excerpt">
+                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                            their Global Housing Crisis competition series.</p>
+                      </div>
+                   </article>
+                </div>
 
-            <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-               <article class="liquid-lp mb-60">
-                  <figure class="liquid-lp-media">
-                     <a href="berita.html">
-                        <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                     </a>
-                  </figure>
-                  <header class="liquid-lp-header">
-                     <h2 class="liquid-lp-title h4"><a href="berita.html">Free beauty samples: What
-                           they are and how
-                           to find them</a></h2>
-                     <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                        2017</time>
-                  </header>
-                  <div class="liquid-lp-excerpt">
-                     <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                        their Global Housing Crisis competition series.</p>
-                  </div>
-               </article>
-            </div>
+                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                   <article class="liquid-lp mb-60">
+                      <figure class="liquid-lp-media">
+                         <a href="berita.html">
+                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                         </a>
+                      </figure>
+                      <header class="liquid-lp-header">
+                         <h2 class="liquid-lp-title h4"><a href="berita.html">Free beauty samples: What
+                               they are and how
+                               to find them</a></h2>
+                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                            2017</time>
+                      </header>
+                      <div class="liquid-lp-excerpt">
+                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                            their Global Housing Crisis competition series.</p>
+                      </div>
+                   </article>
+                </div>
 
-            <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-               <article class="liquid-lp mb-60">
-                  <figure class="liquid-lp-media">
-                     <a href="berita.html">
-                        <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                     </a>
-                  </figure>
-                  <header class="liquid-lp-header">
-                     <h2 class="liquid-lp-title h4"><a href="berita.html">Helen Keller: A teller and a
-                           seller</a></h2>
-                     <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                        2017</time>
-                  </header>
-                  <div class="liquid-lp-excerpt">
-                     <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                        their Global Housing Crisis competition series.</p>
-                  </div>
-               </article>
-            </div>
+                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                   <article class="liquid-lp mb-60">
+                      <figure class="liquid-lp-media">
+                         <a href="berita.html">
+                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                         </a>
+                      </figure>
+                      <header class="liquid-lp-header">
+                         <h2 class="liquid-lp-title h4"><a href="berita.html">Helen Keller: A teller and a
+                               seller</a></h2>
+                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                            2017</time>
+                      </header>
+                      <div class="liquid-lp-excerpt">
+                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                            their Global Housing Crisis competition series.</p>
+                      </div>
+                   </article>
+                </div>
 
-            <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-               <article class="liquid-lp mb-60">
-                  <figure class="liquid-lp-media">
-                     <a href="berita.html">
-                        <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                     </a>
-                  </figure>
-                  <header class="liquid-lp-header">
-                     <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
-                           putting
-                           timeshares to shame</a></h2>
-                     <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                        2017</time>
-                  </header>
-                  <div class="liquid-lp-excerpt">
-                     <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                        their Global Housing Crisis competition series.</p>
-                  </div>
-               </article>
-            </div>
+                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                   <article class="liquid-lp mb-60">
+                      <figure class="liquid-lp-media">
+                         <a href="berita.html">
+                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                         </a>
+                      </figure>
+                      <header class="liquid-lp-header">
+                         <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
+                               putting
+                               timeshares to shame</a></h2>
+                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                            2017</time>
+                      </header>
+                      <div class="liquid-lp-excerpt">
+                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                            their Global Housing Crisis competition series.</p>
+                      </div>
+                   </article>
+                </div>
 
-            <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-               <article class="liquid-lp mb-60">
-                  <figure class="liquid-lp-media">
-                     <a href="berita.html">
-                        <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                     </a>
-                  </figure>
-                  <header class="liquid-lp-header">
-                     <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
-                           London</a></h2>
-                     <time class="liquid-lp-date text-uppercase size-sm">December 19,
-                        2017</time>
-                  </header>
-                  <div class="liquid-lp-excerpt">
-                     <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                        their Global Housing Crisis competition series.</p>
-                  </div>
-               </article>
-            </div> -->
+                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                   <article class="liquid-lp mb-60">
+                      <figure class="liquid-lp-media">
+                         <a href="berita.html">
+                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                         </a>
+                      </figure>
+                      <header class="liquid-lp-header">
+                         <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
+                               London</a></h2>
+                         <time class="liquid-lp-date text-uppercase size-sm">December 19,
+                            2017</time>
+                      </header>
+                      <div class="liquid-lp-excerpt">
+                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                            their Global Housing Crisis competition series.</p>
+                      </div>
+                   </article>
+                </div> -->
                     </div>
                 </div>
 
-                <div class="lqd-column col-md-10 col-md-offset-1 text-center" data-custom-animations="true"
+                <div class="text-center lqd-column col-md-10 col-md-offset-1" data-custom-animations="true"
                     data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
                     <a href="list-berita.html"
                         class="btn btn-solid bg-dark text-uppercase round btn-bordered border-thin font-size-14 font-weight-semibold">
@@ -314,7 +336,7 @@
         <div class="container">
             <div class="row">
                 <div class="lqd-column col-md-8 col-md-offset-2">
-                    <header class="fancy-title text-center">
+                    <header class="text-center fancy-title">
                         <h2 class="mb-1 text-white">
                             Ada Pertanyaan, Keluhan, atau Saran?
                         </h2>
@@ -325,17 +347,17 @@
                         </p>
                     </header>
                 </div>
-                <div class="lqd-column col-md-8 col-md-offset-2 text-center">
+                <div class="text-center lqd-column col-md-8 col-md-offset-2">
                     <div
                         class="ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-md ld-sf--round ld-sf--border-thin ld-sf--button-show ld-sf--button-inline">
                         <form id="ld_subscribe_form-5" class="ld_sf_form" target="_blank"
                             action="https://api.whatsapp.com/send" name="mc-embedded-subscribe-form" method="post">
-                            <p class="ld_sf_paragraph pr-2">
-                                <input class="ld_sf_text bg-gray pl-4" type="text" id="mce-EMAIL" name="text"
+                            <p class="pr-2 ld_sf_paragraph">
+                                <input class="pl-4 ld_sf_text bg-gray" type="text" id="mce-EMAIL" name="text"
                                     placeholder="Tuliskan pesanmu disini" />
                                 <input type="hidden" name="phone" type="text" value="+6281338188144" />
                             </p>
-                            <button type="submit" class="ld_sf_submit px-4 bg-dark text-white">
+                            <button type="submit" class="px-4 text-white ld_sf_submit bg-dark">
                                 <span class="submit-text">Kirim Pesan</span>
                                 <span class="ld-sf-spinner">
                                     <span>Mengirim </span>

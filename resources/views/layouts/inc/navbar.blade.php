@@ -60,7 +60,6 @@
                                         </li>
                                         <li><a href="sejarah">Sejarah Desa</a></li>
                                         <li><a href="wilayah">Wilayah Desa</a></li>
-                                        <li><a href="#">Data Penduduk Terbaru</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -77,7 +76,7 @@
                                         </span>
                                     </a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Artikel Berita</a></li>
+                                        {{-- <li><a href="#">Artikel Berita</a></li> --}}
                                         @foreach ($custom_pages as $page)
                                             <li><a href="{{ $page->slug }}">{{ $page->judul }}</a></li>
                                         @endforeach
