@@ -57,8 +57,11 @@
                     </header>
                 </div>
                 {{-- video --}}
-                <iframe data-custom-animations="true" style="width: 100%;" height="515" src="https://www.youtube.com/embed/7yNC8MFsPV0">
-                </iframe>
+                <div class="youtube-container">
+                    <iframe data-custom-animations="true" style="width: 100%;" height="515" allowfullscreen
+                        src="https://www.youtube.com/embed/7yNC8MFsPV0?modestbranding=1&autohide=1&showinfo=0&controls=0">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -83,10 +86,9 @@
                             </div>
                             <div class="lqd-column col-sm-10 col-xs-12">
                                 <p>
-                                    Desa Seraya memiliki hasil tani berupa sayuran dan
-                                    kacang-kacangan, perkebunan berupa bunga gemitir dan
-                                    bunga pacah, perikanan berupa ikan air tawar, serta
-                                    wisata alam berupa wisata air panas dan camping.
+                                    Desa Seraya memiliki hasil sumber daya alam utama berupa jagung. Sementara dalam sektor
+                                    perikanan berupa ikan tongkol. Desa seraya juga memiliki wisata alam berupa pantai yang
+                                    tersebar di beberapa banjar.
                                 </p>
                             </div>
                         </div>
@@ -97,33 +99,33 @@
                         data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"400","delay":"100","easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>
                         <div class="bg-center bg-cover iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-first"
                             style="
-      background-image: url(assets/img/background/sda-sayur.jpg);
+      background-image: url(assets/img/background/sda-jagung.jpeg);
     ">
                             <div class="contents">
                                 <p class="font-size-14">
-                                    <strong>Daun Teh</strong>
+                                    <strong>Jagung</strong>
                                 </p>
                             </div>
                         </div>
 
                         <div class="bg-center bg-cover iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-second"
                             style="
-      background-image: url(assets/img/background/sda-bunga.jpg);
+      background-image: url(assets/img/background/sda-pantai.jpeg);
     ">
                             <div class="contents">
                                 <p class="font-size-14">
-                                    <strong>Bunga Gemitir</strong>
+                                    <strong>Pantai</strong>
                                 </p>
                             </div>
                         </div>
 
                         <div class="bg-center bg-cover iconbox iconbox-round iconbox-shadow d-inline-flex iconbox-third"
                             style="
-      background-image: url(assets/img/background/sda-buah.jpg);
+      background-image: url(assets/img/background/sda-tongkol.jpeg);
     ">
                             <div class="contents">
                                 <p class="font-size-14">
-                                    <strong>Terong</strong>
+                                    <strong>Ikan Tongkol</strong>
                                 </p>
                             </div>
                         </div>
@@ -192,127 +194,127 @@
                 <div class="lqd-column col-md-12">
                     <div id="list-post" class="row">
                         <!-- <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-                   <article class="liquid-lp mb-60">
-                      <figure class="liquid-lp-media">
-                         <a href="berita.html">
-                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                         </a>
-                      </figure>
-                      <header class="liquid-lp-header">
-                         <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
-                               putting
-                               timeshares to shame</a></h2>
-                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                            2017</time>
-                      </header>
-                      <div class="liquid-lp-excerpt">
-                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                            their Global Housing Crisis competition series.</p>
-                      </div>
-                   </article>
-                </div>
+                       <article class="liquid-lp mb-60">
+                          <figure class="liquid-lp-media">
+                             <a href="berita.html">
+                                <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                             </a>
+                          </figure>
+                          <header class="liquid-lp-header">
+                             <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
+                                   putting
+                                   timeshares to shame</a></h2>
+                             <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                                2017</time>
+                          </header>
+                          <div class="liquid-lp-excerpt">
+                             <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                                their Global Housing Crisis competition series.</p>
+                          </div>
+                       </article>
+                    </div>
 
-                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-                   <article class="liquid-lp mb-60">
-                      <figure class="liquid-lp-media">
-                         <a href="berita.html">
-                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                         </a>
-                      </figure>
-                      <header class="liquid-lp-header">
-                         <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
-                               London</a></h2>
-                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                            2017</time>
-                      </header>
-                      <div class="liquid-lp-excerpt">
-                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                            their Global Housing Crisis competition series.</p>
-                      </div>
-                   </article>
-                </div>
+                    <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                       <article class="liquid-lp mb-60">
+                          <figure class="liquid-lp-media">
+                             <a href="berita.html">
+                                <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                             </a>
+                          </figure>
+                          <header class="liquid-lp-header">
+                             <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
+                                   London</a></h2>
+                             <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                                2017</time>
+                          </header>
+                          <div class="liquid-lp-excerpt">
+                             <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                                their Global Housing Crisis competition series.</p>
+                          </div>
+                       </article>
+                    </div>
 
-                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-                   <article class="liquid-lp mb-60">
-                      <figure class="liquid-lp-media">
-                         <a href="berita.html">
-                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                         </a>
-                      </figure>
-                      <header class="liquid-lp-header">
-                         <h2 class="liquid-lp-title h4"><a href="berita.html">Free beauty samples: What
-                               they are and how
-                               to find them</a></h2>
-                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                            2017</time>
-                      </header>
-                      <div class="liquid-lp-excerpt">
-                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                            their Global Housing Crisis competition series.</p>
-                      </div>
-                   </article>
-                </div>
+                    <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                       <article class="liquid-lp mb-60">
+                          <figure class="liquid-lp-media">
+                             <a href="berita.html">
+                                <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                             </a>
+                          </figure>
+                          <header class="liquid-lp-header">
+                             <h2 class="liquid-lp-title h4"><a href="berita.html">Free beauty samples: What
+                                   they are and how
+                                   to find them</a></h2>
+                             <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                                2017</time>
+                          </header>
+                          <div class="liquid-lp-excerpt">
+                             <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                                their Global Housing Crisis competition series.</p>
+                          </div>
+                       </article>
+                    </div>
 
-                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-                   <article class="liquid-lp mb-60">
-                      <figure class="liquid-lp-media">
-                         <a href="berita.html">
-                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                         </a>
-                      </figure>
-                      <header class="liquid-lp-header">
-                         <h2 class="liquid-lp-title h4"><a href="berita.html">Helen Keller: A teller and a
-                               seller</a></h2>
-                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                            2017</time>
-                      </header>
-                      <div class="liquid-lp-excerpt">
-                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                            their Global Housing Crisis competition series.</p>
-                      </div>
-                   </article>
-                </div>
+                    <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                       <article class="liquid-lp mb-60">
+                          <figure class="liquid-lp-media">
+                             <a href="berita.html">
+                                <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                             </a>
+                          </figure>
+                          <header class="liquid-lp-header">
+                             <h2 class="liquid-lp-title h4"><a href="berita.html">Helen Keller: A teller and a
+                                   seller</a></h2>
+                             <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                                2017</time>
+                          </header>
+                          <div class="liquid-lp-excerpt">
+                             <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                                their Global Housing Crisis competition series.</p>
+                          </div>
+                       </article>
+                    </div>
 
-                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-                   <article class="liquid-lp mb-60">
-                      <figure class="liquid-lp-media">
-                         <a href="berita.html">
-                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                         </a>
-                      </figure>
-                      <header class="liquid-lp-header">
-                         <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
-                               putting
-                               timeshares to shame</a></h2>
-                         <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
-                            2017</time>
-                      </header>
-                      <div class="liquid-lp-excerpt">
-                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                            their Global Housing Crisis competition series.</p>
-                      </div>
-                   </article>
-                </div>
+                    <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                       <article class="liquid-lp mb-60">
+                          <figure class="liquid-lp-media">
+                             <a href="berita.html">
+                                <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                             </a>
+                          </figure>
+                          <header class="liquid-lp-header">
+                             <h2 class="liquid-lp-title h4"><a href="berita.html">Global resorts network GRN
+                                   putting
+                                   timeshares to shame</a></h2>
+                             <time class="liquid-lp-date text-uppercase size-sm" datetime="2017-09-25">December 19,
+                                2017</time>
+                          </header>
+                          <div class="liquid-lp-excerpt">
+                             <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                                their Global Housing Crisis competition series.</p>
+                          </div>
+                       </article>
+                    </div>
 
-                <div class="lqd-column col-md-4 col-sm-6 masonry-item">
-                   <article class="liquid-lp mb-60">
-                      <figure class="liquid-lp-media">
-                         <a href="berita.html">
-                            <img src="assets/img/background/blog.jpg" alt="Lates Post">
-                         </a>
-                      </figure>
-                      <header class="liquid-lp-header">
-                         <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
-                               London</a></h2>
-                         <time class="liquid-lp-date text-uppercase size-sm">December 19,
-                            2017</time>
-                      </header>
-                      <div class="liquid-lp-excerpt">
-                         <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
-                            their Global Housing Crisis competition series.</p>
-                      </div>
-                   </article>
-                </div> -->
+                    <div class="lqd-column col-md-4 col-sm-6 masonry-item">
+                       <article class="liquid-lp mb-60">
+                          <figure class="liquid-lp-media">
+                             <a href="berita.html">
+                                <img src="assets/img/background/blog.jpg" alt="Lates Post">
+                             </a>
+                          </figure>
+                          <header class="liquid-lp-header">
+                             <h2 class="liquid-lp-title h4"><a href="berita.html">Business meeting 2017 in
+                                   London</a></h2>
+                             <time class="liquid-lp-date text-uppercase size-sm">December 19,
+                                2017</time>
+                          </header>
+                          <div class="liquid-lp-excerpt">
+                             <p>Bee Breeders announced the winners of the Modern Collective Living, one part of
+                                their Global Housing Crisis competition series.</p>
+                          </div>
+                       </article>
+                    </div> -->
                     </div>
                 </div>
 
@@ -370,4 +372,6 @@
             </div>
         </div>
     </section>
+
+    
 @endsection
