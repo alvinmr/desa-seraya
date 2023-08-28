@@ -28,7 +28,7 @@
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#hasil-desa">Profil Desa</a></li>
                                 <li><a href="#lokasi">Lembaga Desa</a></li>
-                                <li><a href="list-berita.html">Publikasi</a></li>
+                                <li><a href="#">Publikasi</a></li>
                                 <li><a href="#kontak">Kontak</a></li>
                             </ul>
                         </div>
