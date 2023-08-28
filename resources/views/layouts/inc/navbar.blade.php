@@ -100,7 +100,7 @@
                                             class="fa fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=+6281338188144&text=Halo,%20Desa%20Seraya."
+                                    <a href="https://api.whatsapp.com/send?phone=+6282236706668&text=Halo,%20Desa%20Seraya."
                                         target="_blank"><i class="fa fa-whatsapp"></i></a>
                                 </li>
                             </ul>

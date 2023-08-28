@@ -42,7 +42,7 @@
                                 Desa Seraya, Kecamatan Karangasem, Karangasem, Bali, Indonesia
                                 <br />
                                 <br />
-                                +62 813 3818 8144
+                                +62 8223 6706 668
                             </p>
                         </div>
                     </div>

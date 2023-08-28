@@ -357,7 +357,7 @@
                             <p class="pr-2 ld_sf_paragraph">
                                 <input class="pl-4 ld_sf_text bg-gray" type="text" id="mce-EMAIL" name="text"
                                     placeholder="Tuliskan pesanmu disini" />
-                                <input type="hidden" name="phone" type="text" value="+6281338188144" />
+                                <input type="hidden" name="phone" type="text" value="+6282236706668" />
                             </p>
                             <button type="submit" class="px-4 text-white ld_sf_submit bg-dark">
                                 <span class="submit-text">Kirim Pesan</span>
