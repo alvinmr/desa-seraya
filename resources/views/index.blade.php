@@ -59,7 +59,7 @@
                 {{-- video --}}
                 <div class="youtube-container">
                     <iframe data-custom-animations="true" style="width: 100%;" height="515" allowfullscreen
-                        src="https://www.youtube.com/embed/7yNC8MFsPV0?modestbranding=1&autohide=1&showinfo=0&controls=0">
+                        src="https://www.youtube.com/embed/JjOO8U_T4L8?modestbranding=1&autohide=1&showinfo=0&controls=0">
                     </iframe>
                 </div>
             </div>
