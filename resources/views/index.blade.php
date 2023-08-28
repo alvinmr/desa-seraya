@@ -164,7 +164,7 @@
                             ketinggian 0 s/d 1153 meter di atas permukaan laut, curah
                             hujan relatif rendah
                         </p>
-                        <a href="wilayah.html"
+                        <a href="wilayah"
                             class="btn btn-solid bg-dark text-uppercase round btn-bordered border-thin font-size-14 font-weight-semibold">
                             <span>
                                 <span class="btn-txt">Lihat Wilayah</span>
